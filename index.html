@@ -8,8 +8,8 @@
 <meta property="og:title" content="Shipwreck Bar | Garden Bar &amp; Live Music, Gisborne">
 <meta property="og:description" content="The garden bar and late night local on Gladstone Road, Gisborne. Live music, karaoke, big screens and cold taps.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1200&auto=format&fit=crop">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230a141d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' fill='%23d29a3f' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+<meta property="og:image" content="img/hero-dj.png">
+<link rel="icon" href="img/shipwreck-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Prata&family=Libre+Franklin:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -278,6 +278,10 @@ footer{background:var(--navy-950);border-top:1px solid var(--navy-line);padding:
 .foot-base{border-top:1px solid var(--navy-line);padding-top:22px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;color:var(--soft-on-dark);font-size:.8rem}
 
 /* ---------- reduced motion ---------- */
+.intro-logo{width:min(280px,72vw);height:auto;filter:invert(1);opacity:0;transform:translateY(14px);animation:introUp .9s .15s cubic-bezier(.16,1,.3,1) forwards}
+.logo-image{display:flex;align-items:center;height:40px}
+.logo-image img{display:block;width:132px;height:auto;filter:invert(1);}
+.foot-brand .logo-image img{width:176px}
 @media (prefers-reduced-motion: reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
@@ -289,13 +293,13 @@ footer{background:var(--navy-950);border-top:1px solid var(--navy-line);padding:
 <body>
 
 <div id="intro" aria-hidden="true">
-  <div class="intro-name">Shipwreck Bar</div>
+  <img class="intro-logo" src="img/shipwreck-logo.png" alt="Shipwreck Bar">
   <div class="intro-rule"></div>
 </div>
 
 <header>
   <nav class="nav" aria-label="Main">
-    <a class="logo" href="#top">Shipwreck <span>Bar</span></a>
+    <a class="logo logo-image" href="#top"><img src="img/shipwreck-logo.png" alt="Shipwreck Bar"></a>
     <ul class="nav-links">
       <li><a href="#whats-on">What's on</a></li>
       <li><a href="#about">About</a></li>
@@ -325,9 +329,9 @@ footer{background:var(--navy-950);border-top:1px solid var(--navy-line);padding:
 <!-- HERO -->
 <section class="hero" aria-label="Welcome">
   <div class="hero-slides" aria-hidden="true">
-    <div class="hero-slide on"><img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1900&auto=format&fit=crop" alt="" fetchpriority="high"></div>
-    <div class="hero-slide"><img src="https://images.unsplash.com/photo-1575444758702-4a6b9222336e?q=80&w=1900&auto=format&fit=crop" alt="" loading="lazy"></div>
-    <div class="hero-slide"><img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?q=80&w=1900&auto=format&fit=crop" alt="" loading="lazy"></div>
+    <div class="hero-slide on"><img src="img/hero-dj.png" alt="" fetchpriority="high"></div>
+    <div class="hero-slide"><img src="img/hero-patio.png" alt="" loading="lazy"></div>
+    <div class="hero-slide"><img src="img/hero-stage.png" alt="" loading="lazy"></div>
   </div>
   <div class="hero-shade" aria-hidden="true"></div>
   <div class="hero-inner">
@@ -371,7 +375,7 @@ footer{background:var(--navy-950);border-top:1px solid var(--navy-line);padding:
     </div>
     <div class="svc-grid">
       <article class="svc rv">
-        <div class="svc-photo"><img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=900&auto=format&fit=crop" alt="Crowd enjoying an evening under festoon lights in a garden bar" loading="lazy" width="900" height="506"></div>
+        <div class="svc-photo"><img src="img/garden-day.png" alt="Crowd enjoying an evening under festoon lights in a garden bar" loading="lazy" width="900" height="506"></div>
         <div class="svc-body">
           <div class="svc-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>Outdoors</div>
           <h3>The garden bar</h3>
@@ -379,7 +383,7 @@ footer{background:var(--navy-950);border-top:1px solid var(--navy-line);padding:
         </div>
       </article>
       <article class="svc rv">
-        <div class="svc-photo"><img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=900&auto=format&fit=crop" alt="Performer on stage under lights and smoke" loading="lazy" width="900" height="506"></div>
+        <div class="svc-photo"><img src="img/live-neon.png" alt="Performer on stage under lights and smoke" loading="lazy" width="900" height="506"></div>
         <div class="svc-body">
           <div class="svc-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>Live</div>
           <h3>Live music</h3>
@@ -387,7 +391,7 @@ footer{background:var(--navy-950);border-top:1px solid var(--navy-line);padding:
         </div>
       </article>
       <article class="svc rv">
-        <div class="svc-photo"><img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=900&auto=format&fit=crop" alt="Retro microphone in warm stage lighting" loading="lazy" width="900" height="506"></div>
+        <div class="svc-photo"><img src="img/karaoke-stage.png" alt="Retro microphone in warm stage lighting" loading="lazy" width="900" height="506"></div>
         <div class="svc-body">
           <div class="svc-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-10"/><path d="M12 19v3"/></svg>Sing</div>
           <h3>Karaoke and open mic</h3>
@@ -395,7 +399,7 @@ footer{background:var(--navy-950);border-top:1px solid var(--navy-line);padding:
         </div>
       </article>
       <article class="svc rv">
-        <div class="svc-photo"><img src="https://images.unsplash.com/photo-1538488881038-e252a119ace7?q=80&w=900&auto=format&fit=crop" alt="Bar interior with sport playing on wall screens" loading="lazy" width="900" height="506"></div>
+        <div class="svc-photo"><img src="img/sport-pool.png" alt="Bar interior with sport playing on wall screens" loading="lazy" width="900" height="506"></div>
         <div class="svc-body">
           <div class="svc-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Sport</div>
           <h3>Big screens, pool and gaming</h3>
@@ -403,7 +407,7 @@ footer{background:var(--navy-950);border-top:1px solid var(--navy-line);padding:
         </div>
       </article>
       <article class="svc rv">
-        <div class="svc-photo"><img src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?q=80&w=900&auto=format&fit=crop" alt="Beer pouring from the tap into a cold glass" loading="lazy" width="900" height="506"></div>
+        <div class="svc-photo"><img src="img/taps.png" alt="Beer pouring from the tap into a cold glass" loading="lazy" width="900" height="506"></div>
         <div class="svc-body">
           <div class="svc-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 11h1a3 3 0 0 1 0 6h-1"/><path d="M9 12v6M13 12v6"/><path d="M5 8h12v9a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4z"/><path d="M5 8a4 4 0 0 1 8-2 3 3 0 0 1 4 2"/></svg>On tap</div>
           <h3>Cold taps and a full bar</h3>
@@ -411,7 +415,7 @@ footer{background:var(--navy-950);border-top:1px solid var(--navy-line);padding:
         </div>
       </article>
       <article class="svc rv">
-        <div class="svc-photo"><img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=900&auto=format&fit=crop" alt="Group of friends sharing drinks around a long outdoor table" loading="lazy" width="900" height="506"></div>
+        <div class="svc-photo"><img src="img/functions.png" alt="Group of friends sharing drinks around a long outdoor table" loading="lazy" width="900" height="506"></div>
         <div class="svc-body">
           <div class="svc-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Book it</div>
           <h3>Functions and fundraisers</h3>
@@ -427,7 +431,7 @@ footer{background:var(--navy-950);border-top:1px solid var(--navy-line);padding:
   <div class="wrap">
     <div class="about-grid">
       <div class="about-photo rv">
-        <img src="https://images.unsplash.com/photo-1574096079513-d8259312b785?q=80&w=1000&auto=format&fit=crop" alt="Characterful timber bar interior with a well stocked back bar" loading="lazy" width="1000" height="750">
+        <img src="img/about-bar.png" alt="Characterful timber bar interior with a well stocked back bar" loading="lazy" width="1000" height="750">
         <div class="about-corner">Gladstone Rd</div>
       </div>
       <div class="about-copy rv">
@@ -559,7 +563,7 @@ footer{background:var(--navy-950);border-top:1px solid var(--navy-line);padding:
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <a class="logo" href="#top">Shipwreck <span>Bar</span></a>
+        <a class="logo logo-image" href="#top"><img src="img/shipwreck-logo.png" alt="Shipwreck Bar"></a>
         <p>The garden bar and late night local at 335 Gladstone Road, Gisborne. Known to the locals as the Shippy.</p>
       </div>
       <div class="foot-col">
